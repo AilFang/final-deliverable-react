@@ -1,18 +1,24 @@
-import logo from "./logo.svg";
 import "./Navigation.css";
 
 function Navigation() {
   return (
-    <div className="nav-links">
-      <header className="App-header">
-        <a href="/">
-          {" "}
-          <img class="logo" src="../images/ecos-logo.png" />
-        </a>
-        <a href="/Map/">Map</a>
-        <a href="/Resources/">Resources</a>
-      </header>
-    </div>
+    <nav>
+      <a href="/">
+        {" "}
+        <img class="logo" src="../images/ecos-logo.png" />
+      </a>
+      <ul className="nav-links">
+        <li>
+          <a href="/Map/">Map</a>
+        </li>
+        <li>
+          <a href="/Resources/">Resources</a>
+        </li>
+        <li>
+          <a href="/Activities">Activities</a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
