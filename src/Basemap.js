@@ -6,8 +6,9 @@ function Basemap() {
       viewBox="0 0 1023 752"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="basemap"
     >
-      <g id="map" className="basemap">
+      <g id="map">
         <g id="main floor">
           <line
             id="Line 2"
