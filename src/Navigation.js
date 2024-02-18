@@ -9,7 +9,7 @@ function Navigation() {
       </a>
       <ul className="nav-links">
         <li>
-          <a href="/Map/">Map</a>
+          <a href="/Wild/">Map</a>
         </li>
         <li>
           <a href="/Resources/">Resources</a>

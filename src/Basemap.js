@@ -1,4 +1,3 @@
-import "./Basemap.css";
 function Basemap() {
   return (
     <svg
