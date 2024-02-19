@@ -2,8 +2,8 @@
   background-color: rgb(30, 27, 35);
   display: flex;
   justify-content: flex-end;
-  padding-inline: 40px;
-  gap: 20px;
+  padding-inline: 100px;
+  gap: 80px;
   align-items: center;
 }
 

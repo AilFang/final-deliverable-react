@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navigation />
-      <a href="/Map">
+      <a href="./Map">
         <div className="map-container">
           <Basemap className="basemap" />
         </div>
