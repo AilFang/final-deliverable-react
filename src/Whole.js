@@ -13,7 +13,7 @@ function Whole() {
         className="whole"
       >
         <g id="whole">
-          <Link to=".Main">
+          <Link to="/main">
             <g id="main floor">
               <line
                 id="Line 2"

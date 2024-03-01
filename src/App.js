@@ -10,7 +10,7 @@ function App() {
     <>
       <Navigation />
 
-      <Link to="./Map">
+      <Link to="/map">
         <div className="map-container">
           <Basemap className="basemap" />
         </div>
