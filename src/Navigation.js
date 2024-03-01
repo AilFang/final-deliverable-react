@@ -1,21 +1,22 @@
 import "./Navigation.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <nav>
-      <a href="/">
-        {" "}
+      <Link to="/">
         <img class="logo" src="../images/ecos-logo.png" />
-      </a>
+      </Link>
+
       <ul className="nav-links">
         <li>
-          <a href="/Wild/">Map</a>
+          <Link to="/map">Map</Link>
         </li>
         <li>
-          <a href="/Resources/">Resources</a>
+          <Link to="/resources">Resources</Link>
         </li>
         <li>
-          <a href="/Activities">Activities</a>
+          <Link to="/activities">Activities</Link>
         </li>
       </ul>
     </nav>

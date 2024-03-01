@@ -1,0 +1,27 @@
+.whole-container {
+  border: 1px solid white;
+  height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:root {
+  --title-height: 30px;
+}
+
+.title {
+  text-align: center;
+  height: 30px;
+}
+
+.whole g {
+  pointer-events: bounding-box;
+  opacity: 0.5;
+}
+.whole g:hover {
+  opacity: 1;
+}
+
+.cafe {
+  opacity: 0.5;
+}

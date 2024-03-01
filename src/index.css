@@ -19,10 +19,10 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
 }
 .map-container :hover {
   opacity: 0.3;
-  fill: black;
 }
 
 .middle {
