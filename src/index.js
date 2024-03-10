@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Map from "./Map";
-import Main from "./Main";
+import MainFloor from "./MainFloor";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "main",
-    element: <Main />,
+    element: <MainFloor />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

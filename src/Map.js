@@ -1,6 +1,6 @@
 import Wild from "./Wild";
 import Navigation from "./Navigation";
-import Whole from "./Whole";
+import WholeMap from "./WholeMap";
 import Footer from "./Footer";
 import Checkbox from "./Checkbox";
 function Map() {
@@ -9,7 +9,7 @@ function Map() {
       <Navigation />
       <h1 className="title">School Map</h1>
       <div className="whole-container">
-        <Whole />
+        <WholeMap />
       </div>
 
       <Footer />

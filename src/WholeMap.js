@@ -1,7 +1,7 @@
-import "./Whole.css";
+import "./WholeMap.css";
 import { Link } from "react-router-dom";
 
-function Whole() {
+function WholeMap() {
   return (
     <>
       <svg
@@ -2833,4 +2833,4 @@ function Whole() {
   );
 }
 
-export default Whole;
+export default WholeMap;
