@@ -1,7 +1,7 @@
-import "./Whole.css";
+import "./WholeMap.css";
 import { Link } from "react-router-dom";
 
-function Whole() {
+function WholeMap() {
   return (
     <>
       <svg
@@ -13,7 +13,7 @@ function Whole() {
         className="whole"
       >
         <g id="whole">
-          <Link to=".Main">
+          <Link to="/main">
             <g id="main floor">
               <line
                 id="Line 2"
@@ -2833,4 +2833,4 @@ function Whole() {
   );
 }
 
-export default Whole;
+export default WholeMap;
