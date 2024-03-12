@@ -2,7 +2,7 @@ import "./Map.css";
 import React, { useState } from "react";
 
 
-// pull in setRooms from MainFloor
+// pull in rooms & setRooms from MainFloor props
 function Checkbox({ label, value, onChange }) {
   const [isChecked, setIsChecked] = useState(false);
 
@@ -10,9 +10,10 @@ function Checkbox({ label, value, onChange }) {
     setIsChecked(!isChecked);
 
     // sami -> aileen
-    // find the key of the id
+    // find the key of the id in rooms
     // set the value of the id's isChecked to the opposed value
-    // setRooms();
+    // let updatedRooms = logic
+    // setRooms(updatedRooms);
   };
 
   

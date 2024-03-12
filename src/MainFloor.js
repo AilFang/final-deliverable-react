@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import MainMap from "./MainMap";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
@@ -35,7 +35,7 @@ function MainFloor() {
 
       {/* {rooms.map((room) => {
         return (
-          <Checkbox label={room.label} checked={room.isChecked} setRooms={setRooms}/>
+          <Checkbox label={room.label} checked={room.isChecked} rooms={rooms} setRooms={setRooms}/>
         )
       })} */}
 
