@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 
 // pull in rooms & setRooms from MainFloor props
-function Checkbox({ label, value, onChange }) {
+function Checkbox({ label, onChange }) {
   const [isChecked, setIsChecked] = useState(false);
 
   const checkHandler = () => {
@@ -16,25 +16,14 @@ function Checkbox({ label, value, onChange }) {
     // setRooms(updatedRooms);
   };
 
-  
+  return (
+    <label className="container">
+      <input type="checkbox" checked={isChecked} onChange={checkHandler} />
+      <span className="checkmark"></span>
+      {label}
+    </label>
+  );
 
-  if (isChecked) {
-    return (
-      <label className="test">
-        <input type="checkbox" checked={value} onChange={checkHandler} />
-        <span className="checkmark"></span>
-        {label}
-      </label>
-    );
-  } else {
-    return (
-      <label className="container">
-        <input type="checkbox" checked={value} onChange={checkHandler} />
-        <span className="checkmark"></span>
-        {label}
-      </label>
-    );
-  }
   //   return (
   //     <label className="container">
   //       <input type="checkbox" checked={value} onChange={checkHandler} />
