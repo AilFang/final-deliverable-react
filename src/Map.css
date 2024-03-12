@@ -73,3 +73,10 @@ input[type="checkbox"]:focus {
 .test {
   color: green;
 }
+
+.complete {
+  fill: green;
+}
+path:hover {
+  fill: red;
+}

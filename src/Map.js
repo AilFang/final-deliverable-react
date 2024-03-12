@@ -1,8 +1,6 @@
-import Wild from "./Wild";
 import Navigation from "./Navigation";
 import WholeMap from "./WholeMap";
 import Footer from "./Footer";
-import Checkbox from "./Checkbox";
 function Map() {
   return (
     <>

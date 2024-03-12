@@ -3,7 +3,6 @@ import Basemap from "./Basemap";
 import "./index.css";
 import About from "./About";
 import Footer from "./Footer";
-import Map from "./Map";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function App() {
   return (

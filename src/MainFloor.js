@@ -17,6 +17,7 @@ function MainFloor() {
       <Checkbox label="SRC" />
       <Checkbox label="Band Room" />
       <Checkbox label="Chorus Room" />
+      <Footer></Footer>
     </>
   );
 }

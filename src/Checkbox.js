@@ -9,7 +9,7 @@ function Checkbox({ label, value, onChange }) {
   };
   if (isChecked) {
     return (
-      <label className="container">
+      <label className="test">
         <input type="checkbox" checked={value} onChange={checkHandler} />
         <span className="checkmark"></span>
         {label}
@@ -17,7 +17,7 @@ function Checkbox({ label, value, onChange }) {
     );
   } else {
     return (
-      <label className="test">
+      <label className="container">
         <input type="checkbox" checked={value} onChange={checkHandler} />
         <span className="checkmark"></span>
         {label}
