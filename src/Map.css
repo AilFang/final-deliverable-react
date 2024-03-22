@@ -70,13 +70,11 @@ input[type="checkbox"]:focus {
   outline-offset: max(2px, 0.15em);
 }
 
-.test {
-  color: green;
+.empty {
+  opacity: 0;
 }
 
-.complete {
+.fill {
+  opacity: 1;
   fill: green;
-}
-path:hover {
-  fill: red;
 }

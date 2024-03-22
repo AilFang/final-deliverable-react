@@ -8,21 +8,30 @@ import React, { useState } from "react";
 // let updatedRooms = logic
 // setRooms(updatedRooms);
 
-function Checkbox({ label, onChange }) {
+function Checkbox({ label, setRooms, rooms, id }) {
   const [isChecked, setIsChecked] = useState(false);
 
-  const checkHandler = () => {
+  const checkHandler = (clickedId) => {
     const newValue = !isChecked;
     setIsChecked(newValue);
-    console.log("New value:", newValue);
-    if (onChange) {
-      onChange(newValue);
-    }
+    // console.log("----------");
+    // console.log("New value:", newValue);
+    // console.log("id:", id);
+    // console.log("Clicked ID:", clickedId);
+    const room = rooms.find((x) => x.id === clickedId);
+    // console.log("room:", room);
+    room.isChecked = newValue;
+    console.log("Rooms:", rooms);
+    setRooms(rooms);
   };
 
   return (
     <label className="container">
-      <input type="checkbox" checked={isChecked} onChange={checkHandler} />
+      <input
+        type="checkbox"
+        checked={isChecked}
+        onChange={() => checkHandler(id)}
+      />
       <span className="checkmark"></span>
       {label}
     </label>
