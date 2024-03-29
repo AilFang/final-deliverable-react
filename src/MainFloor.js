@@ -7,28 +7,46 @@ import Checkbox from "./Checkbox";
 function MainFloor() {
   const [rooms, setRooms] = useState([]);
 
-  console.log("Room:", rooms);
-
   useEffect(() => {
     setRooms([
       {
-        id: "1",
+        id: "MainOffice",
         label: "Main Office",
         isChecked: false,
       },
       {
-        id: "2",
+        id: "OrchestraRoom",
         label: "Orchestra Room",
         isChecked: false,
       },
       {
-        id: "3",
+        id: "BandRoom",
         label: "Band Room",
         isChecked: false,
       },
       {
-        id: "4",
+        id: "ChorusRoom",
+        label: "Chorus Room",
+        isChecked: false,
+      },
+      {
+        id: "r11",
+        label: "5.111",
+        isChecked: false,
+      },
+      {
+        id: "Counseling",
         label: "Counseling",
+        isChecked: false,
+      },
+      {
+        id: "SRC",
+        label: "SRC",
+        isChecked: false,
+      },
+      {
+        id: "MLLH",
+        label: "MLLH",
         isChecked: false,
       },
     ]);
@@ -48,8 +66,6 @@ function MainFloor() {
       </div>
 
       {rooms.map((room) => {
-        console.log("Update room", rooms);
-        console.log("isChecked", room.isChecked);
         return (
           <Checkbox
             key={room.id}
@@ -59,19 +75,9 @@ function MainFloor() {
             setRooms={setRooms}
             id={room.id}
             onChange={(isChecked) => handleCheckboxChange(room.id, isChecked)}
-
-            // onChange={(newValue) => handleCheckboxChange(room.label, newValue)}
           />
         );
       })}
-      {/* <Checkbox label="MLLH" /> */}
-
-      {/* <Checkbox label="Main Office" /> */}
-      {/* <Checkbox label="Orchestra Room" /> */}
-      {/* <Checkbox label="Counseling Office" />
-      <Checkbox label="SRC" /> */}
-      {/* <Checkbox label="Band Room" /> */}
-      {/* <Checkbox label="Chorus Room" /> */}
       <Footer></Footer>
     </>
   );
