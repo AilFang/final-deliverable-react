@@ -1,6 +1,7 @@
 import Navigation from "./Navigation";
 import WholeMap from "./WholeMap";
 import Footer from "./Footer";
+import "./WholeMap.css";
 function Map() {
   return (
     <>
@@ -9,7 +10,6 @@ function Map() {
       <div className="whole-container">
         <WholeMap />
       </div>
-
       <Footer />
     </>
   );

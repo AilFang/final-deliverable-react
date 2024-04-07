@@ -1,54 +1,114 @@
 import { useState, useEffect, useRef } from "react";
-import MainMap from "./MainMap";
+import WildWestMap from "./WildWestMap";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Checkbox from "./Checkbox";
 import Back from "./Back";
 
-function MainFloor() {
+function WildWest() {
   const [rooms, setRooms] = useState([]);
   const checkboxContainerRef = useRef(null);
 
   useEffect(() => {
     setRooms([
       {
-        id: "MainOffice",
-        label: "Main Office",
-        isChecked: false,
-      },
-      {
-        id: "OrchestraRoom",
-        label: "Orchestra Room",
-        isChecked: false,
-      },
-      {
-        id: "BandRoom",
-        label: "Band Room",
-        isChecked: false,
-      },
-      {
-        id: "ChorusRoom",
-        label: "Chorus Room",
+        id: "r12",
+        label: "3.112",
         isChecked: false,
       },
       {
         id: "r11",
-        label: "5.111",
+        label: "3.111",
         isChecked: false,
       },
       {
-        id: "Counseling",
-        label: "Counseling",
+        id: "r02",
+        label: "3.102",
         isChecked: false,
       },
       {
-        id: "SRC",
-        label: "SRC",
+        id: "r09",
+        label: "3.109",
         isChecked: false,
       },
       {
-        id: "MLLH",
-        label: "MLLH",
+        id: "r03",
+        label: "3.103",
+        isChecked: false,
+      },
+      {
+        id: "r04",
+        label: "3.104",
+        isChecked: false,
+      },
+      {
+        id: "r07",
+        label: "3.107",
+        isChecked: false,
+      },
+      {
+        id: "r08",
+        label: "3.108",
+        isChecked: false,
+      },
+      {
+        id: "r06",
+        label: "3.106",
+        isChecked: false,
+      },
+      {
+        id: "r21",
+        label: "3.121",
+        isChecked: false,
+      },
+      {
+        id: "r22",
+        label: "3.122",
+        isChecked: false,
+      },
+      {
+        id: "r26",
+        label: "3.126",
+        isChecked: false,
+      },
+      {
+        id: "r23",
+        label: "3.123",
+        isChecked: false,
+      },
+      {
+        id: "r24",
+        label: "3.124",
+        isChecked: false,
+      },
+      {
+        id: "r27",
+        label: "3.127",
+        isChecked: false,
+      },
+      {
+        id: "r28",
+        label: "3.128",
+        isChecked: false,
+      },
+      {
+        id: "r29",
+        label: "3.129",
+        isChecked: false,
+      },
+      {
+        id: "r31",
+        label: "3.131",
+        isChecked: false,
+      },
+      {
+        id: "r32",
+        label: "3.132",
+        isChecked: false,
+      },
+      {
+        id: "r35",
+        label: "3.135",
         isChecked: false,
       },
     ]);
@@ -67,7 +127,7 @@ function MainFloor() {
       <Navigation></Navigation>
       <Back></Back>
       <div className="individual-container">
-        <MainMap rooms={rooms}></MainMap>
+        <WildWestMap rooms={rooms}></WildWestMap>
       </div>
       <div ref={checkboxContainerRef} className="checkbox-container">
         {rooms.map((room) => {
@@ -89,4 +149,4 @@ function MainFloor() {
   );
 }
 
-export default MainFloor;
+export default WildWest;

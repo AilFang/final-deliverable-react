@@ -1,9 +1,19 @@
 import "./Footer.css";
+import { useState, useEffect, useRef } from "react";
 
 function Footer() {
+  const [footerHeight, setFooterHeight] = useState(0);
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    if (footerRef.current) {
+      const height = footerRef.current.offsetHeight;
+      setFooterHeight(height);
+    }
+  }, []);
   return (
     <>
-      <footer className="footer">
+      <footer ref={footerRef} className="footer">
         <img class="logo" src="../images/otherLogo.png" />
         <ul>
           <b>

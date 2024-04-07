@@ -1,60 +1,91 @@
 import { useState, useEffect, useRef } from "react";
-import MainMap from "./MainMap";
+import SecondFloorMap from "./SecondFloorMap";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Checkbox from "./Checkbox";
 import Back from "./Back";
 
-function MainFloor() {
+function Secondfloor() {
   const [rooms, setRooms] = useState([]);
+  const [checkboxContainerHeight, setCheckboxContainerHeight] = useState(0);
   const checkboxContainerRef = useRef(null);
 
   useEffect(() => {
     setRooms([
       {
-        id: "MainOffice",
-        label: "Main Office",
+        id: "r62",
+        label: "5.262",
         isChecked: false,
       },
       {
-        id: "OrchestraRoom",
-        label: "Orchestra Room",
+        id: "r59",
+        label: "5.259",
         isChecked: false,
       },
       {
-        id: "BandRoom",
-        label: "Band Room",
+        id: "r58",
+        label: "5.258",
         isChecked: false,
       },
       {
-        id: "ChorusRoom",
-        label: "Chorus Room",
+        id: "r57",
+        label: "5.257",
         isChecked: false,
       },
       {
-        id: "r11",
-        label: "5.111",
+        id: "r56",
+        label: "5.256",
         isChecked: false,
       },
       {
-        id: "Counseling",
-        label: "Counseling",
+        id: "r54",
+        label: "5.254",
         isChecked: false,
       },
       {
-        id: "SRC",
-        label: "SRC",
+        id: "r48",
+        label: "5.248",
         isChecked: false,
       },
       {
-        id: "MLLH",
-        label: "MLLH",
+        id: "r49",
+        label: "5.249",
+        isChecked: false,
+      },
+      {
+        id: "r79",
+        label: "5.279",
+        isChecked: false,
+      },
+      {
+        id: "r41",
+        label: "5.241",
+        isChecked: false,
+      },
+      {
+        id: "r01",
+        label: "5.201",
+        isChecked: false,
+      },
+      {
+        id: "r19",
+        label: "5.219",
+        isChecked: false,
+      },
+      {
+        id: "r21",
+        label: "5.221",
         isChecked: false,
       },
     ]);
   }, []);
 
-  useEffect(() => {}, [rooms]);
+  useEffect(() => {
+    if (checkboxContainerRef.current) {
+      const height = checkboxContainerRef.current.offsetHeight;
+      setCheckboxContainerHeight(height);
+    }
+  }, [rooms]);
   const handleCheckboxChange = (id, isChecked) => {
     const updatedRooms = rooms.map((room) =>
       room.id === id ? { ...room, isChecked } : room
@@ -67,9 +98,13 @@ function MainFloor() {
       <Navigation></Navigation>
       <Back></Back>
       <div className="individual-container">
-        <MainMap rooms={rooms}></MainMap>
+        <SecondFloorMap rooms={rooms}></SecondFloorMap>
       </div>
-      <div ref={checkboxContainerRef} className="checkbox-container">
+      <div
+        ref={checkboxContainerRef}
+        style={{ "--checkbox-height": `${checkboxContainerHeight}px` }}
+        className="checkbox-container"
+      >
         {rooms.map((room) => {
           return (
             <Checkbox
@@ -89,4 +124,4 @@ function MainFloor() {
   );
 }
 
-export default MainFloor;
+export default Secondfloor;

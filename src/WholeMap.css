@@ -1,17 +1,26 @@
+.individual-container {
+  height: calc(100vh - var(--nav-height) - var(--checkbox-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 .whole-container {
-  border: 1px solid white;
-  height: calc(100vh - var(--nav-height));
+  height: calc(100vh - var(--nav-height)- var(--title-height));
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 :root {
   --title-height: 30px;
 }
 
 .title {
   text-align: center;
-  height: 30px;
+  height: var(--title-height);
 }
 
 .whole g {
@@ -24,4 +33,21 @@
 
 .cafe {
   opacity: 0.5;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.checkbox-container .container {
+  flex: 1 1 calc(20% - 10px);
+  padding-bottom: 10px;
+}
+
+.back {
+  color: white;
+  margin-left: 20px;
 }

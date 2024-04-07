@@ -9,6 +9,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: white;
+  font-family: "Comfortaa", sans-serif;
 }
 
 /* Hide the browser's default checkbox */
