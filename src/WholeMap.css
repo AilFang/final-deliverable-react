@@ -1,5 +1,5 @@
 .individual-container {
-  height: calc(100vh - var(--nav-height) - var(--checkbox-height));
+  height: calc(100vh - var(--nav-height));
   display: flex;
   align-items: center;
   justify-content: center;
