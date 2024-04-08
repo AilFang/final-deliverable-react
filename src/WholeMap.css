@@ -1,5 +1,5 @@
 .individual-container {
-  height: calc(100vh - var(--nav-height));
+  height: calc(100vh - var(--nav-height)- var(--footer-height));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +16,7 @@
 
 :root {
   --title-height: 30px;
+  --footer-height: 150px;
 }
 
 .title {
