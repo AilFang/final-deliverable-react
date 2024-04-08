@@ -5,6 +5,8 @@
   padding-inline: 100px;
   gap: 80px;
   align-items: center;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer li {
